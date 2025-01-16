@@ -11,9 +11,22 @@
     "test": "npx -p @kmamal/testing testing",
     "update-exports": "node ./scripts/update-exports.mjs"
   },
-  "exports": "./src/index.js",
+  "exports": {
+    "./back": "./src/back.js",
+    "./elastic": "./src/elastic.js",
+    "./bounce": "./src/bounce.js",
+    "./quad": "./src/quad.js",
+    "./quint": "./src/quint.js",
+    "./sine": "./src/sine.js",
+    "./circ": "./src/circ.js",
+    "./cubic": "./src/cubic.js",
+    "./expo": "./src/expo.js",
+    "./quart": "./src/quart.js"
+  },
   "main": "./src/index.js",
   "devDependencies": {
-    "@kmamal/testing": "^0.0.30"
+    "@kmamal/sdl": "^0.10.7",
+    "@kmamal/testing": "^0.0.30",
+    "canvas": "^3.0.1"
   }
 }
